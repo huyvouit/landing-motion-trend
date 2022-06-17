@@ -1,0 +1,21 @@
+@mixin flex($aligin-item, $justify-content) {
+  display: flex;
+  align-items: $aligin-item;
+  justify-content: $justify-content;
+}
+
+@mixin max-width($max) {
+  max-width: $max;
+  margin: 0 auto;
+}
+
+@mixin boxShadow($value, $color) {
+  box-shadow: 0 0 $value $color;
+}
+
+@mixin textFont($size, $weight, $color, $line-height) {
+  font-size: $size;
+  font-weight: $weight;
+  color: $color;
+  line-height: $line-height;
+}
