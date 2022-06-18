@@ -1,6 +1,9 @@
 import React from 'react';
+
 import Images from '../../assets/images';
+
 import './styles.scss';
+
 const CardSlider = (props) => {
   const [selectedTab, setSelectedTab] = React.useState(4);
   const slideLeft = () => {
@@ -26,7 +29,8 @@ const CardSlider = (props) => {
                 className="slider-main"
                 style={{ backgroundColor: selectedTab === index ? '#ff2e43' : '#070707' }}
               >
-                <p className="slider-card-title">{slide.title}</p>
+                {slide.title}
+                {/* <p className="slider-card-title"></p> */}
               </button>
             </div>
           );

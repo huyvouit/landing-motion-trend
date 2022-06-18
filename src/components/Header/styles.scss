@@ -50,7 +50,7 @@
       border: none;
       border-bottom: 1px solid $gray;
       outline: none;
-      @include textFont(14px, 500, $white, 29px);
+      @include textFont(14px, 500, $white, 2.07);
     }
 
     & input::placeholder {

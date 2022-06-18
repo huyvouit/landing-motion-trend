@@ -57,3 +57,15 @@
     @content;
   }
 }
+
+@mixin screen1750 {
+  @media only screen and (max-width: 1750px) {
+    @content;
+  }
+}
+
+@mixin screen1300 {
+  @media only screen and (max-width: 1300px) {
+    @content;
+  }
+}

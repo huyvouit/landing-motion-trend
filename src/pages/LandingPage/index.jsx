@@ -1,5 +1,10 @@
 import React from 'react';
+import ytsApi from '../../api/yts';
 import CardSlider from '../../components/CardSlider';
+import MovieCard from '../../components/MovieCard';
+import MovieCategory from '../../components/MovieCategory';
+import MovieGrid from '../../components/MovieGrid';
+import './styles.scss';
 
 const LandingPage = () => {
   const sliderClick = (slider) => {
@@ -19,7 +24,13 @@ const LandingPage = () => {
     { title: 'Doll' },
   ];
 
-  return <CardSlider slides={SLIDES_LIST} />;
+  return (
+    <main className="wrapper-main">
+      <CardSlider slides={SLIDES_LIST} />
+      <MovieCategory />
+      <MovieGrid />
+    </main>
+  );
 };
 
 export default LandingPage;

@@ -1,9 +1,9 @@
-import axiosClient from "./axiosClient";
+import axiosClient from './axiosClient';
 
 const ytsApi = {
   getMoviesList: (params) => {
-    const url = "/list_movies.json";
-    return axiosClient.get(url, params);
+    const url = '/list_movies.json';
+    return axiosClient.get(url, { params });
   },
 };
 

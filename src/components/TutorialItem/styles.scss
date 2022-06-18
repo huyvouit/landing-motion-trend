@@ -1,0 +1,52 @@
+@use '../../scss/' as *;
+
+.tutorial {
+  &-item {
+    width: 100%;
+    height: 89px;
+    display: flex;
+  }
+  .image {
+    width: 157px;
+    height: 100%;
+  }
+  &-info {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-left: 19px;
+
+    .text {
+      @include textFont(18px, 500, $black, 1);
+      font-family: $font-family;
+    }
+    .description {
+      width: 272px;
+      @include screen1750 {
+        margin-right: 0;
+        width: 100%;
+      }
+      @include textFont(12px, 300, $black, 1.25);
+      font-family: $font-family;
+    }
+  }
+
+  .auth-right {
+    display: flex;
+
+    gap: 15px;
+    align-items: center;
+  }
+  .auth-flex {
+    display: flex;
+
+    gap: 5px;
+    align-items: center;
+  }
+
+  .auth-name {
+    @include textFont(12px, 300, $black, 1.5);
+    font-family: $font-family;
+  }
+}

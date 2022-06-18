@@ -1,8 +1,10 @@
 import React from 'react';
+
 import Icons from '../../assets/icons';
-// import style from './styles.scss';
 import Images from '../../assets/images';
+
 import './styles.scss';
+
 const Header = () => {
   const [keyword, setKeyword] = React.useState('');
   return (
