@@ -4,6 +4,8 @@ import { PopUpContext } from '../../context/popup_provider';
 import Icons from '../../assets/icons';
 import './styles.scss';
 import ModalInfo from './ModalInfo';
+import ModalImage from './Modalmage';
+import ModalVideo from './ModalSlider';
 
 const Modal = () => {
   const { showPopUp, closePopUp } = useContext(PopUpContext);
@@ -26,6 +28,8 @@ const Modal = () => {
           <img src={Icons.IconTZ} alt="tz" className="icon-tz" />
           <img src={Icons.IconTZ} alt="tz" className="icon-tz-2" />
           <ModalInfo />
+          <ModalImage />
+          <ModalVideo />
         </div>
         <div className="right-icon">
           <img src={Icons.IconRight} alt="right" />

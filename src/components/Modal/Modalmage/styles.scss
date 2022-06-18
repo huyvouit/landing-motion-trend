@@ -1,0 +1,127 @@
+@use '../../../scss/' as *;
+
+.modal-list {
+  margin: 0 60px;
+  margin-top: 103px;
+  margin-bottom: 50px;
+  .video {
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 804px;
+    margin-right: 129px;
+    // @include screen1750 {
+    //   margin-right: 0;
+    //   width: 50%;
+    //   position: absolute;
+    //   right: 0;
+    //   height: 450px;
+    //   top: 50px;
+    // }
+    // @include screen1300 {
+    //   position: relative;
+    //   width: 100%;
+    //   height: 450px;
+    //   top: 0;
+    //   margin-top: 30px;
+    // }
+    &:hover {
+      cursor: pointer;
+    }
+
+    .icon-play {
+      width: 129px;
+      height: 78px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+
+  .modal-intro {
+    margin-top: 40px;
+    .text {
+      @include textFont(14px, 200, $black, 1.71);
+      font-family: $font-family;
+    }
+  }
+
+  .list-image {
+    margin-top: 99px;
+    & > * ~ * {
+      margin-top: 70px;
+    }
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .image {
+      width: 1139.9px;
+      height: 645px;
+    }
+  }
+
+  .portfolio {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .text {
+      @include textFont(30px, 400, $black, 0.6);
+      font-family: $font-family;
+    }
+
+    .interactive {
+      display: flex;
+      align-items: center;
+      margin-top: 20px;
+      & > * ~ * {
+        margin-left: 19px;
+      }
+      &-item {
+        display: flex;
+        align-items: center;
+        & > * ~ * {
+          margin-left: 7px;
+        }
+
+        .text-item {
+          @include textFont(18px, 300, $black, 0.97);
+          font-family: $font-family;
+        }
+      }
+    }
+
+    .sub-text {
+      margin-top: 29px;
+      @include textFont(15.5px, 300, $black, 1.84);
+      font-family: $font-family;
+    }
+
+    .button-list {
+      margin-top: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      & > * ~ * {
+        margin-left: 5px;
+      }
+      .text-button {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        .text {
+          @include textFont(12px, 400, $white, 2.08);
+          font-family: $font-family;
+        }
+      }
+    }
+  }
+}

@@ -6,6 +6,7 @@ import BgVideo from './tutorial-img-1.png';
 import Video1 from './upload-video-img-1.png';
 import Video2 from './upload-video-img-2.png';
 import Video3 from './upload-video-img-3.png';
+import Video4 from './upload-video-img-4.png';
 import PhotoShop from './creative-photoshop-icon.png';
 import Ill from './creative-illustrator-icon.png';
 import Pre from './creative-premiere-icon.png';
@@ -23,5 +24,6 @@ const Images = {
   Video1,
   Video2,
   Video3,
+  Video4,
 };
 export default Images;

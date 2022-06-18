@@ -1,0 +1,85 @@
+@use '../../../scss/' as *;
+
+.modal-video {
+  width: 100%;
+  //   margin: 0 auto;
+  background-color: $grayLight;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-bottom: 100px;
+
+  .info {
+    padding-bottom: 15.2px;
+    margin: 0 60px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    .profile {
+      width: 69.8px;
+      height: 69.8px;
+    }
+
+    &-name {
+      @include textFont(18px, 500, $black, 1.94);
+      font-family: $font-family;
+    }
+  }
+}
+
+#slider {
+  width: 100%;
+  height: 100%;
+  white-space: nowrap;
+  overflow-x: scroll;
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+}
+
+#slider::-webkit-scrollbar {
+  display: none;
+}
+
+#main-slider-container1 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: calc(100% - 120px);
+  margin-left: 60px;
+  margin-right: 60px;
+}
+.slider {
+  //   & > * ~ * {
+  //     margin-left: 15px !important;
+  //   }
+  &-card1 {
+    justify-content: center;
+    align-items: center;
+    display: inline-block;
+    // margin-left: 5px;
+    // margin-right: 5px;
+    width: 344px;
+    margin-right: 15px !important;
+    // height: 195px !important;
+    cursor: pointer;
+
+    .movie-card-image {
+      height: 195px !important;
+    }
+  }
+}
+
+.slider-icon {
+  position: absolute;
+  border-radius: 100rem;
+  box-shadow: 2px 2px 2px 2px rgb(0 0 0 / 12%);
+  cursor: pointer;
+}
+
+.left {
+  left: 18px;
+}
+
+.slider-icon.right {
+  right: -19px !important;
+}
