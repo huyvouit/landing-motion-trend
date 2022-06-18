@@ -8,6 +8,7 @@ import IconView from './view-icon.svg';
 import IconLive from './live-box.svg';
 import IconTZ from './label-tz.svg';
 import IconPlay from './play-icon.svg';
+import IconDown from './line-black-arrow-down-icon.svg';
 const Icons = {
   IconSearch,
   IconMenu,
@@ -19,5 +20,6 @@ const Icons = {
   IconLive,
   IconTZ,
   IconPlay,
+  IconDown,
 };
 export default Icons;

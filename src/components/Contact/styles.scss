@@ -1,0 +1,48 @@
+@use '../../scss/' as *;
+
+.contact {
+  max-width: $max-width;
+  margin: 0 auto;
+  padding: 0 30px;
+  background-color: $black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  height: 40px;
+  @include screen750 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+  }
+  &-left {
+    display: flex;
+    align-items: center;
+    .title {
+      @include textFont(14px, 500, $white, 1.29);
+      font-family: $font-family;
+      margin-right: 31px;
+    }
+    .email {
+      @include textFont(12px, 200, $white, 2.08);
+      font-family: $font-family;
+    }
+  }
+
+  &-right {
+    display: flex;
+    align-items: center;
+    .copy-right {
+      @include textFont(12px, 200, $grayDark, 2.08);
+      font-family: $font-family;
+      margin-right: 31px;
+    }
+
+    .icon-social {
+      & > * ~ * {
+        margin-left: 15px;
+      }
+    }
+  }
+}

@@ -1,6 +1,8 @@
 import React from 'react';
 import ytsApi from '../../api/yts';
 import CardSlider from '../../components/CardSlider';
+import Contact from '../../components/Contact';
+import Footer from '../../components/Footer';
 import MovieCard from '../../components/MovieCard';
 import MovieCategory from '../../components/MovieCategory';
 import MovieGrid from '../../components/MovieGrid';
@@ -29,6 +31,8 @@ const LandingPage = () => {
       <CardSlider slides={SLIDES_LIST} />
       <MovieCategory />
       <MovieGrid />
+      <Contact />
+      <Footer />
     </main>
   );
 };

@@ -8,11 +8,11 @@
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
-  //   grid-template-rows: 204px;
+
   gap: 15px;
   margin-bottom: 40px;
 
-  //   @include sc {
-  //     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-  //   }
+  @include screen1500 {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
 }

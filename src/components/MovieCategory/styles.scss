@@ -8,15 +8,24 @@
     display: flex;
     justify-content: space-between;
     height: auto;
+
+    @include screen650 {
+      flex-direction: column;
+    }
   }
 
   &-left {
     display: flex;
     // align-items: center;
     height: auto;
-
     & > * ~ * {
       margin-left: 31px;
+    }
+    @include screen550 {
+      flex-direction: column;
+      & > * ~ * {
+        margin-left: 0;
+      }
     }
   }
   &-right {

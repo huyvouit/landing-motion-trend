@@ -1,0 +1,58 @@
+@use '../../scss/' as *;
+
+.footer {
+  max-width: $max-width;
+  margin: 0 auto;
+  padding: 0 30px;
+  background-color: $white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  height: 33px;
+  @include screen750 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    padding: 20px 0;
+  }
+
+  &-left {
+    display: flex;
+    align-items: center;
+    & > * ~ * {
+      margin-left: 19px;
+    }
+    @include screen550 {
+      display: block;
+      text-align: center;
+      & > * ~ * {
+        margin-left: 0px;
+      }
+    }
+    .internal {
+      @include textFont(12px, 300, $black, 1.5);
+      font-family: $font-family;
+
+      span {
+        padding-left: 5px;
+        img {
+          vertical-align: middle;
+        }
+      }
+    }
+  }
+
+  &-right {
+  }
+}
+
+.line {
+  width: 1px;
+  height: 16px;
+  background-color: $grayLight;
+  @include screen550 {
+    display: none;
+  }
+}
