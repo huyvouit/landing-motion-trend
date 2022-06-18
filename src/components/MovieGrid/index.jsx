@@ -10,6 +10,7 @@ import './styles.scss';
 const MovieGrid = () => {
   const [listMovie, setListMovie] = useState([]);
   const [page, setPage] = useState(1);
+
   const fetchMovieList = async (page) => {
     try {
       const res = await ytsApi.getMoviesList({ page, limit: 30, genre: 'action' });

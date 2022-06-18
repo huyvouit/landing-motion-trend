@@ -1,0 +1,67 @@
+@use '../../scss/' as *;
+
+.modal {
+  //   background-color: red;
+  left: 50%;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  overflow: auto;
+  transition: all 0.5s ease;
+  z-index: 101;
+
+  &-wrapper {
+    display: flex;
+    gap: 51px;
+    align-items: center;
+    height: 100%;
+    margin: 0 99px;
+    .left-icon,
+    .right-icon {
+      &:hover {
+        cursor: pointer;
+        opacity: 0.8;
+      }
+    }
+  }
+  &-content {
+    background: $white;
+    width: 100%;
+    overflow: scroll;
+    height: 100vh;
+    // margin: auto;
+    height: 100%;
+    overflow-y: auto;
+    padding: 0 60px;
+
+    position: relative;
+
+    .icon-tz {
+      position: absolute;
+      top: 0;
+      right: 60px;
+
+      width: 60px;
+      height: 81px;
+    }
+    .icon-tz-2 {
+      position: absolute;
+      top: 0;
+      right: 130px;
+      width: 60px;
+      height: 81px;
+    }
+  }
+}
+
+.close {
+  position: absolute;
+  right: 20px;
+  top: 18px;
+
+  &:hover {
+    cursor: pointer;
+    opacity: 0.8;
+  }
+}

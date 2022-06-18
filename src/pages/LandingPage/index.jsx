@@ -32,7 +32,6 @@ const LandingPage = () => {
       <MovieCategory />
       <MovieGrid />
       <Contact />
-      <Footer />
     </main>
   );
 };

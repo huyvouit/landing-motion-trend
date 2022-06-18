@@ -1,18 +1,22 @@
-import React from 'react';
+import React, { useContext } from 'react';
 
 import Icons from '../../assets/icons';
 import Images from '../../assets/images';
+import { PopUpContext } from '../../context/popup_provider';
 
 import './styles.scss';
 
 const MovieCard = (props) => {
   const { background_image_original, title, index, runtime } = props;
 
+  const { setShowPopUp } = useContext(PopUpContext);
+
   return (
     <div className="movie-card">
       <div
         className="movie-card-image"
         style={{ backgroundImage: `url(${background_image_original})` }}
+        onClick={() => setShowPopUp(true)}
       >
         {index === 0 && <img src={Icons.IconTZ} alt="live" className="icon" />}
         <div className="info">

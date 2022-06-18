@@ -1,0 +1,71 @@
+@use '../../../scss/' as *;
+
+.modal-info {
+  display: flex;
+  width: 100%;
+  padding-top: 40px;
+  gap: 30px;
+  .info-left {
+    width: 120px;
+    height: 120px;
+    .profile {
+      width: 120px;
+      height: 120px;
+    }
+  }
+
+  .info-detail {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 120px;
+    .text {
+      @include textFont(30px, 500, $black, 0.6);
+      font-family: $font-family;
+    }
+
+    .subText {
+      display: flex;
+      //   justify-content: center;
+      align-items: center;
+      margin-top: -15px !important;
+      gap: 31px;
+      .name {
+        @include textFont(15.5px, 300, $black, 1.16);
+        font-family: $font-family;
+      }
+      .type {
+        @include textFont(15.5px, 500, #8c8c8c, 0.6);
+        font-family: $font-family;
+      }
+    }
+
+    .button-list {
+      display: flex;
+      justify-content: space-between;
+      .button-left {
+        display: flex;
+        align-items: center;
+        & > * ~ * {
+          margin-left: 5px;
+        }
+
+        .text-button {
+          display: flex;
+          align-items: center;
+          gap: 5px;
+          .text {
+            @include textFont(12px, 400, $white, 2.08);
+            font-family: $font-family;
+          }
+        }
+      }
+
+      .edit {
+        @include textFont(12px, 400, $blackThree, 2.08);
+        font-family: $font-family;
+      }
+    }
+  }
+}

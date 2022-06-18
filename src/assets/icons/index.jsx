@@ -9,6 +9,21 @@ import IconLive from './live-box.svg';
 import IconTZ from './label-tz.svg';
 import IconPlay from './play-icon.svg';
 import IconDown from './line-black-arrow-down-icon.svg';
+import IconLeft from './l-white-line-arrow.svg';
+import IconRight from './r-white-line-arrow.svg';
+import IconClose from './close-white-icon.svg';
+import IconDelete from './upload-delete-icon.svg';
+import IconReport from './upload-report-icon.svg';
+import IconComment from './enter-comments-icon.svg';
+import IconChervonRight from './r-black-circle-arrow.svg';
+import IconLove from './like-button-icon.svg';
+import IconShare from './share-black-icon.svg';
+import IconCopy from './go-to-page-icon.svg';
+import IconUser from './follower-icon.svg';
+import IconUser2 from './white-follower-button-icon.svg';
+import IconPin from './location-gray-icon.svg';
+import IconMess from './small-comments-icon.svg';
+import IconAdd from './white-add-button-icon.svg';
 const Icons = {
   IconSearch,
   IconMenu,
@@ -21,5 +36,20 @@ const Icons = {
   IconTZ,
   IconPlay,
   IconDown,
+  IconChervonRight,
+  IconClose,
+  IconComment,
+  IconDelete,
+  IconReport,
+  IconRight,
+  IconLeft,
+  IconLove,
+  IconUser,
+  IconUser2,
+  IconPin,
+  IconShare,
+  IconCopy,
+  IconMess,
+  IconAdd,
 };
 export default Icons;
