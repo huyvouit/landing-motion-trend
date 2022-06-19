@@ -76,14 +76,15 @@ const ModalDetail = () => {
         </div>
       </div>
       <div className="modal-report">
-        <Button
-          style={{ backgroundColor: '#fff', width: '100%', height: 38, border: '1px solid black' }}
+        <button
+          className="button-report"
+          //   style={{ backgroundColor: '#fff', width: 339, height: 38, border: '1px solid black' }}
         >
           <div className="button-item">
             <img src={Icons.IconReport} alt="report" />
             <p>Report</p>
           </div>
-        </Button>
+        </button>
       </div>
     </div>
   );

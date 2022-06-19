@@ -20,6 +20,9 @@
     @include screen950 {
       margin: 0 40px;
     }
+    @include screen550 {
+      margin: 0;
+    }
     .left-icon,
     .right-icon {
       width: 74px;
@@ -93,6 +96,9 @@
   @include screen950 {
     right: 30px;
     top: 50px;
+  }
+  @include screen550 {
+    display: none;
   }
   .item {
     width: 70px;

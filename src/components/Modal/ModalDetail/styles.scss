@@ -144,6 +144,20 @@
     @include screen1850 {
       padding-left: 0;
     }
+    .button-report {
+      background-color: #fff;
+      width: 339px;
+      height: 38px;
+      border: 1px solid black;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      @include screen650 {
+        width: 80%;
+      }
+    }
     .button-item {
       p {
         margin-left: 9px;
