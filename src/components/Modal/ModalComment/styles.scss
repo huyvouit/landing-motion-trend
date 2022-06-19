@@ -1,0 +1,106 @@
+@use '../../../scss/' as *;
+
+.modal {
+  &-comment {
+    flex: 1;
+    height: 100%;
+    width: 1000px;
+    margin: 50px 50px 70px 60px;
+    @include screen1850 {
+      width: 90%;
+      //   padding: 50px;
+      margin: 0;
+      margin-top: 50px;
+      //   margin-top: 50px;
+    }
+    &-title {
+      @include textFont(20px, 500, $black, 1.75);
+      font-family: $font-family;
+    }
+  }
+
+  &-textInput {
+    width: 100%;
+    display: flex;
+    padding-top: 20px;
+    input {
+      flex: 1;
+      border: 1px solid $black;
+      outline: none;
+      padding: 0 15px;
+    }
+    & input::placeholder {
+      @include textFont(12px, 400, $black, 2.08);
+      font-family: $font-family;
+    }
+  }
+
+  .list-comment {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    & > * ~ * {
+      margin-top: 40px;
+    }
+
+    .comment-item {
+      position: relative;
+      .comment-info {
+        display: flex;
+        align-items: center;
+        .user {
+          width: 50px;
+          height: 50px;
+        }
+        .user-text {
+          margin-left: 15px;
+          p {
+            @include textFont(12px, 300, $black, '2.5');
+            font-family: $font-family;
+            margin-top: 6px;
+          }
+          p:first-child {
+            @include textFont(14px, 500, $black, '2.5');
+            font-family: $font-family;
+            margin-top: 0;
+          }
+        }
+      }
+      .comment-content {
+        @include textFont(12px, 200, $blackThree, 1.5);
+        font-family: $font-family;
+        margin-top: 13px;
+      }
+
+      .icon-delete {
+        position: absolute;
+        top: 0;
+        right: 35px;
+        transform: scale(0);
+        cursor: pointer;
+      }
+      .icon-report {
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: scale(0);
+        cursor: pointer;
+      }
+
+      @media (hover: hover) and (pointer: fine) {
+        &:hover .icon-delete,
+        &:hover .icon-report {
+          transform: scale(1);
+        }
+      }
+    }
+  }
+  .button-item {
+    display: flex;
+    align-items: center;
+    p {
+      @include textFont(12px, 400, $black, 1.5);
+      font-family: $font-family;
+      margin-right: 9px;
+    }
+  }
+}

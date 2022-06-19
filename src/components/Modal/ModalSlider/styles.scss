@@ -6,9 +6,8 @@
   background-color: $grayLight;
   padding-top: 50px;
   padding-bottom: 50px;
-  margin-bottom: 100px;
 
-  .info {
+  .information {
     padding-bottom: 15.2px;
     margin: 0 60px;
     display: flex;
@@ -20,7 +19,7 @@
       height: 69.8px;
     }
 
-    &-name {
+    .info-name {
       @include textFont(18px, 500, $black, 1.94);
       font-family: $font-family;
     }
@@ -52,6 +51,7 @@
   //   & > * ~ * {
   //     margin-left: 15px !important;
   //   }
+  width: 100%;
   &-card1 {
     justify-content: center;
     align-items: center;

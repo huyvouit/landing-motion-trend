@@ -59,7 +59,7 @@ const VideoSlider = (props) => {
 const ModalVideo = () => {
   return (
     <div className="modal-video">
-      <div className="info">
+      <div className="information">
         <img src={Images.Profile} alt="profile" className="profile" />
         <p className="info-name">Kim Aeyong</p>
       </div>

@@ -1,0 +1,153 @@
+@use '../../../scss/' as *;
+
+.modal {
+  &-detail {
+    flex: 1;
+    height: 932px;
+    padding-top: 50px;
+    border-left: 1px solid $grayLight;
+    @include screen1850 {
+      border: none;
+      width: 90%;
+      margin-bottom: 50px;
+    }
+  }
+  &-owner {
+    padding-bottom: 50px;
+    border-bottom: 1px solid $grayLight;
+    .owner-text {
+      padding-left: 50px;
+      @include screen1850 {
+        padding-left: 0;
+      }
+      @include textFont(12px, 300, $black, 2.08);
+      font-family: $font-family;
+    }
+    .owner-info {
+      padding-left: 50px;
+      display: flex;
+      align-items: center;
+      @include screen1850 {
+        padding-left: 0;
+      }
+      .user {
+        width: 50px;
+        height: 50px;
+      }
+      .user-text {
+        padding-left: 17px;
+
+        p {
+          @include textFont(14px, 500, $black, '');
+          font-family: $font-family;
+        }
+        .sub-text {
+          display: flex;
+          align-items: center;
+          p {
+            @include textFont(12px, 300, $black, 1.5);
+            font-family: $font-family;
+          }
+        }
+      }
+    }
+  }
+
+  &-port {
+    padding: 50px 0;
+    border-bottom: 1px solid $grayLight;
+    .port-text {
+      padding-left: 50px;
+      @include screen1850 {
+        padding-left: 0;
+      }
+      @include textFont(16px, 500, $black, 1.56);
+      font-family: $font-family;
+    }
+    .port-text-2 {
+      padding-left: 50px;
+      @include screen1850 {
+        padding-left: 0;
+      }
+      @include textFont(12px, 300, $black, 2.38);
+      font-family: $font-family;
+      margin-top: 20px;
+    }
+    .interactive {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-top: 15px;
+      padding-left: 50px;
+      @include screen1850 {
+        padding-left: 0;
+      }
+      & > * ~ * {
+        margin-left: 19px;
+      }
+      &-item {
+        display: flex;
+        align-items: center;
+        & > * ~ * {
+          margin-left: 7px;
+        }
+
+        .text-item {
+          @include textFont(12px, 300, $black, 1.46);
+          font-family: $font-family;
+        }
+      }
+    }
+
+    .interactive-2 {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-top: 15px;
+      padding-left: 50px;
+      @include screen1850 {
+        padding-left: 0;
+      }
+      gap: 5px;
+    }
+
+    .create-text {
+      padding-left: 50px;
+      @include screen1850 {
+        padding-left: 0;
+      }
+      @include textFont(12px, 300, $black, 2.08);
+      font-family: $font-family;
+    }
+
+    .list-props {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 4px;
+      padding-left: 50px;
+      @include screen1850 {
+        padding-left: 0;
+      }
+      .props-item {
+        padding: 9px 10px;
+        border: 1px solid $redLight;
+        @include textFont(14px, 500, $redLight, 1.68);
+        font-family: $font-family;
+      }
+    }
+  }
+
+  &-report {
+    padding-left: 50px;
+    padding-top: 50px;
+    @include screen1850 {
+      padding-left: 0;
+    }
+    .button-item {
+      p {
+        margin-left: 9px;
+      }
+    }
+  }
+}

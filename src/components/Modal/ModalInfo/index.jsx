@@ -43,7 +43,12 @@ const ModalInfo = () => {
             </Button>
           </div>
           <Button
-            style={{ backgroundColor: '#fff', width: 140, height: 38, border: '1px solid black' }}
+            style={{
+              backgroundColor: '#fff',
+              width: 140,
+              height: 38,
+              border: '1px solid black',
+            }}
           >
             <p className="edit">Edit Project</p>
           </Button>

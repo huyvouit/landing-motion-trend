@@ -1,6 +1,7 @@
 import React from 'react';
 
 import Images from '../../assets/images';
+import Icons from '../../assets/icons';
 
 import './styles.scss';
 
@@ -18,8 +19,8 @@ const CardSlider = (props) => {
 
   return (
     <div id="main-slider-container">
-      <div className="slider-icon left">
-        <img src={Images.ChervonRight} onClick={slideRight} alt="chervon-right" />
+      <div className="slider-icon1 left1">
+        <img src={Icons.IconChervonLeft} onClick={slideRight} alt="chervon-right" />
       </div>
       <div id="slider">
         {props.slides.map((slide, index) => {
@@ -36,9 +37,10 @@ const CardSlider = (props) => {
           );
         })}
       </div>
+
       <img
         src={Images.ChervonRight}
-        className="slider-icon right"
+        className="slider-icon right1"
         onClick={slideLeft}
         alt="chervon-right"
       />

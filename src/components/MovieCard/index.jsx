@@ -19,6 +19,7 @@ const MovieCard = (props) => {
         onClick={() => setShowPopUp(true)}
       >
         {index === 0 && <img src={Icons.IconTZ} alt="live" className="icon" />}
+
         <div className="info">
           <p className="info-title">{title}</p>
           <p className="info-time">{`${Math.floor(runtime / 60)}:${runtime % 60}`}</p>

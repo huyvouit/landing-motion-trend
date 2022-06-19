@@ -58,6 +58,11 @@
   }
 }
 
+@mixin screen1850 {
+  @media only screen and (max-width: 1850px) {
+    @content;
+  }
+}
 @mixin screen1750 {
   @media only screen and (max-width: 1750px) {
     @content;

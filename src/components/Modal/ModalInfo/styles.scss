@@ -6,6 +6,18 @@
   margin: 0 60px;
   padding-top: 40px;
   gap: 30px;
+  align-items: center;
+  @include screen750 {
+    padding-top: 100px;
+  }
+  @include screen1199 {
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+  }
+  @include screen1000 {
+    width: 100%;
+  }
   .info-left {
     width: 120px;
     height: 120px;
@@ -20,17 +32,35 @@
     flex: 1;
     flex-direction: column;
     justify-content: space-between;
+
     height: 120px;
+    @include screen1199 {
+      height: 100%;
+      gap: 20px;
+      align-items: center;
+    }
+
     .text {
       @include textFont(30px, 500, $black, 0.6);
       font-family: $font-family;
+
+      @include screen750 {
+        line-height: 1;
+        text-align: center;
+      }
     }
 
     .subText {
       display: flex;
       //   justify-content: center;
       align-items: center;
-      margin-top: -15px !important;
+      margin-top: -15px;
+      @include screen1199 {
+        margin-top: 10px;
+      }
+      @include screen750 {
+        flex-direction: column;
+      }
       gap: 31px;
       .name {
         @include textFont(15.5px, 300, $black, 1.16);
@@ -45,11 +75,18 @@
     .button-list {
       display: flex;
       justify-content: space-between;
+      gap: 5px;
+      @include screen850 {
+        flex-direction: column;
+        align-items: center;
+      }
       .button-left {
         display: flex;
         align-items: center;
-        & > * ~ * {
-          margin-left: 5px;
+        gap: 5px;
+        @include screen750 {
+          flex-direction: column;
+          align-items: center;
         }
 
         .text-button {
